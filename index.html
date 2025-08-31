@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy kitchen</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- AOS Library CSS -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- nav  -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background: linear-gradient(to right, rgb(231, 226, 226), rgb(92, 91, 92), rgb(67, 51, 51), rgb(33, 32, 33), rgb(52, 45, 45));">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img width="30" height="30" src="prithiviraj-a-vDlt9BQND-o-unsplash.jpg"
+                    class="d-inline-block align-text-top rounded-circle"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse justify-content-end" id="nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item d-flex align-items-end text-end my-auto">
+                        <a class="nav-link active" aria-current="page" href="../main/index.php" style="color: white;"><i
+                                class="fas fa-home"></i>Home</a>
+                    </li>
+
+                    <li class="nav-item d-flex align-items-end text-end my-auto">
+                        <a class="nav-link" href="#" style="color: white;"><i class="fas fa-info-circle"></i> About</a>
+                    </li>
+                    <li class="nav-item d-flex align-items-end text-end my-auto">
+                        <a class="nav-link" href="../contact/contact.php" style="color: white;"><i
+                                class="fas fa-user"></i> Contact</a>
+                    </li>
+                    <li class="nav-item d-flex align-items-end text-end my-auto"></li>
+                    <a class="nav-link" href="#" style="color: white;"><i class="fas fa-shopping-cart"></i> Cart</a>
+                    </li>
+                    <li class="nav-item d-flex align-items-end text-end my-auto">
+                        <a class="nav-link" href="#" style="color: blue;"><i class="fas fa-user"></i>
+                            <?php echo  htmlspecialchars($_SESSION['email']) ;  ?></a>
+                    </li>
+                    <li class="nav-item d-flex align-items-end text-end my-auto">
+                        <a class="nav-link" href="../Auth/logout.php" style="color: white;"><i
+                                class="fas fa-user-plus"></i> Sign out</a>
+                    </li>
+                </ul>
+            </div>
+    </nav>
+
+    <!-- hero  -->
+   
+    <header>
+
+        <div class="hero "> 
+            <h4>Outstanding Food</h4>
+            <h2>YumI's <br>Kitchen</h2>
+            <a href="#" class="hero--btn"> Make a Reservation</a>
+        </div>
+    </header>
+
+    <!-- about  -->
+
+    <div class="about container text-center my-5" data-aos="fade-right">
+        <hr>
+        <section id="about" class="main-container">
+
+            <div class="sub-container1">
+                <h2>About Us</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                    anim id est laborum.
+                </p>
+            </div>
+
+        </section></br>
+        <hr>
+    </div>
+
+    <!-- center  -->
+    <div class="container-fluid" id="center_part">
+        <hr>
+        <div class="row">
+            <div class="col-12 col-md-6 text-center">
+                <img src="prithiviraj-a-vDlt9BQND-o-unsplash.jpg" data-aos="zoom-in" alt="about image"
+                    class="img-fluid position-sticky my-auto justify-content-center rounded">
+            </div>
+
+            <div class="col-12 col-md-6 my-auto justify-content-center" data-aos="fade-left">
+                <div class="text-center my-4 text-light" style="font-family: roboto, sans-serif;">
+                    <h2>Welcome to <strong> Yumi's kitchen</strong></h2>
+                    <p>
+                        in Yumi's kitchen we give quality dishes <br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit
+                        praesentium itaque, maxime at ipsam voluptate?
+                    </p>
+                    <p><i class="fa fa-hourglass" aria-hidden="true"></i> over 11 years of experience
+                        <hr> 14 popular master chefs
+                    </p>
+                    <a href="#" class="btn btn-primary btn-start">Read More</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+<hr><br>
+    <!-- feature  -->
+    <div class="container my-5">
+        <div class="row g-4">
+
+            <div class="col-md-3" id="feature" data-aos="flip-left">
+                <div class="custom-card border">
+                    <div class="icon text-center"><i class="fas icon fa-user-tie"></i></div>
+                    <h5 class="text-center">Master chef</h5>
+                    <p class="text-center">our expert chef cooks the best meals</p>
+                </div>
+            </div>
+
+            <div class="col-md-3" id="feature" data-aos="flip-left">
+                <div class="custom-card card-custom border">
+                    <div class="icon text-center"><i class="fas icon fa-utensils"></i></div>
+                    <h5 class="text-center">Delicious food</h5>
+                    <p class="text-center">we serve the most delicious, intercontinental Dishes</p>
+                </div>
+            </div>
+
+            <div class="col-md-3" id="feature" data-aos="flip-left">
+                <div class="custom-card border">
+                    <div class="icon text-center"><i class="fas icon fa-cart-shopping"></i></div>
+                    <h5 class="text-center">Online order</h5>
+                    <p class="text-center">Qucik and simple ordering Experience</p>
+                </div>
+            </div>
+
+            <div class="col-md-3" id="feature" data-aos="flip-left">
+                <div class="custom-card border">
+                    <div class="icon text-center"><i class="fas icon fa-headset"></i></div>
+                    <h5 class="text-center">24/7 Service</h5>
+                    <p class="text-center">we are available 24/7 for you. Just give us a call</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+<hr><br>
+    <!-- menu  -->
+    <div class="tab-content" id="menuTabContent">
+        <div class="tab-pane fade show active" id="breakfast" role="tabpanel">
+            <!-- order -->
+            <div class="container mt-5 order-menu">
+                <h3 class="text-center align-center col-12 justify-content-center">Our menu <i
+                        class="fas fa-utensils    "></i></h3>
+                <!-- order-row-1  -->
+                <div class="row order-row">
+                    <div class="col-md-6 col-12">
+                        <div class="row mt-4 mb-2" data-aos="fade-up" >
+                            <div class="col-1"></div>
+                            <div class="col-2"><img class="img-end rounded" src="coffee_1.avif" height="60"
+                                    width="60"> </div>
+                            <div class="col-6">
+                                <h5>coffee and bread crumbs</h5>
+                                <h6><i class="fa fa-tags" aria-hidden="true"></i>price: <span
+                                        class="text-primary">$23.50</span></h6>
+                            </div>
+                            <div class="col-2">
+                                <div class="myBox">
+                                    <button class="btn">
+                                        <i class="fa fa-plus-square " id="plus-square" aria-hidden="true"
+                                            style="color: chocolate; "></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-1"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="row mt-4 mb-2" data-aos="fade-up">
+                            <div class="col-1"></div>
+                            <div class="col-2"><img class="img-end rounded" src="chicken_n_fries.jpg" height="60"
+                                    width="60"> </div>
+                            <div class="col-6">
+                                <h5>Chicken and fries</h5>
+                                <h6><i class="fa fa-tags" aria-hidden="true"></i>price: <span
+                                        class="text-primary">$10.50</span></h6>
+                            </div>
+                            <div class="col-2">
+                                <div class="myBox">
+                                    <button class="btn">
+                                        <i class="fa fa-plus-square " id="plus-square" aria-hidden="true"
+                                            style="color: chocolate; "></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-1"></div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row order-row">
+                    <div class="col-md-6 col-12">
+                        <div class="row mt-4 mb-2" data-aos="fade-up">
+                            <div class="col-1"></div>
+                            <div class="col-2"><img class="img-end rounded" src="coffee_1.avif" height="60"
+                                    width="60"> </div>
+                            <div class="col-6">
+                                <h5>coffee and bread crumbs</h5>
+                                <h6><i class="fa fa-tags" aria-hidden="true"></i>price: <span
+                                        class="text-primary">$23.50</span></h6>
+                            </div>
+                            <div class="col-2">
+                                <div class="myBox">
+                                    <button class="btn">
+                                        <i class="fa fa-plus-square " id="plus-square" aria-hidden="true"
+                                            style="color: chocolate; "></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-1"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="row mt-4 mb-2" data-aos="fade-up">
+                            <div class="col-1"></div>
+                            <div class="col-2"><img class="img-end rounded" src="chicken_n_fries.jpg" height="60"
+                                    width="60"> </div>
+                            <div class="col-6">
+                                <h5>Chicken and fries</h5>
+                                <h6><i class="fa fa-tags" aria-hidden="true"></i>price: <span
+                                        class="text-primary">$10.50</span></h6>
+                            </div>
+                            <div class="col-2">
+                                <div class="myBox">
+                                    <button class="btn">
+                                        <i class="fa fa-plus-square " id="plus-square" aria-hidden="true"
+                                            style="color: chocolate; "></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-1"></div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+                <div class="row order-row">
+                    <div class="col-md-6 col-12">
+                        <div class="row mt-4 mb-2" data-aos="fade-up">
+                            <div class="col-1"></div>
+                            <div class="col-2"><img class="img-end rounded" src="coffee_1.avif" height="60"
+                                    width="60"> </div>
+                            <div class="col-6">
+                                <h5>coffee and bread crumbs</h5>
+                                <h6><i class="fa fa-tags" aria-hidden="true"></i>price: <span
+                                        class="text-primary">$23.50</span></h6>
+                            </div>
+                            <div class="col-2">
+                                <div class="myBox">
+                                    <button class="btn">
+                                        <i class="fa fa-plus-square " id="plus-square" aria-hidden="true"
+                                            style="color: chocolate; "></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-1"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="row mt-4 mb-2" data-aos="fade-up">
+                            <div class="col-1"></div>
+                            <div class="col-2"><img class="img-end rounded" src="chicken_n_fries.jpg" height="60"
+                                    width="60"> </div>
+                            <div class="col-6">
+                                <h5>Chicken and fries</h5>
+                                <h6><i class="fa fa-tags" aria-hidden="true"></i>price: <span
+                                        class="text-primary">$10.50</span></h6>
+                            </div>
+                            <div class="col-2">
+                                <div class="myBox">
+                                    <button class="btn">
+                                        <i class="fa fa-plus-square " id="plus-square" aria-hidden="true"
+                                            style="color: chocolate; "></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-1"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="row order-row">
+                    <div class="col-md-6 col-12">
+                        <div class="row mt-4 mb-2" data-aos="fade-up">
+                            <div class="col-1"></div>
+                            <div class="col-2"><img class="img-end rounded" src="coffee_1.avif" height="60"
+                                    width="60"> </div>
+                            <div class="col-6">
+                                <h5>coffee and bread crumbs</h5>
+                                <h6><i class="fa fa-tags" aria-hidden="true"></i>price: <span
+                                        class="text-primary">$23.50</span></h6>
+                            </div>
+                            <div class="col-2">
+                                <div class="myBox">
+                                    <button class="btn">
+                                        <i class="fa fa-plus-square " id="plus-square" aria-hidden="true"
+                                            style="color: chocolate; "></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-1"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="row mt-4 mb-2" data-aos="fade-up">
+                            <div class="col-1"></div>
+                            <div class="col-2"><img class="img-end rounded" src="chicken_n_fries.jpg" height="60"
+                                    width="60"> </div>
+                            <div class="col-6">
+                                <h5>Chicken and fries</h5>
+                                <h6><i class="fa fa-tags" aria-hidden="true"></i>price: <span
+                                        class="text-primary">$10.50</span></h6>
+                            </div>
+                            <div class="col-2">
+                                <div class="myBox">
+                                    <button class="btn">
+                                        <i class="fa fa-plus-square " id="plus-square" aria-hidden="true"
+                                            style="color: chocolate; "></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-1"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="row order-row">
+                    <div class="col-md-6 col-12">
+                        <div class="row mt-4 mb-2" data-aos="fade-up">
+                            <div class="col-1"></div>
+                            <div class="col-2"><img class="img-end rounded" src="coffee_1.avif" height="60"
+                                    width="60"> </div>
+                            <div class="col-6">
+                                <h5>coffee and bread crumbs</h5>
+                                <h6><i class="fa fa-tags" aria-hidden="true"></i>price: <span
+                                        class="text-primary">$23.50</span></h6>
+                            </div>
+                            <div class="col-2">
+                                <div class="myBox">
+                                    <button class="btn">
+                                        <i class="fa fa-plus-square " id="plus-square" aria-hidden="true"
+                                            style="color: chocolate; "></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-1"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="row mt-4 mb-2" data-aos="fade-up">
+                            <div class="col-1"></div>
+                            <div class="col-2"><img class="img-end rounded" src="chicken_n_fries.jpg" height="60"
+                                    width="60"> </div>
+                            <div class="col-6">
+                                <h5>Chicken and fries</h5>
+                                <h6><i class="fa fa-tags" aria-hidden="true"></i>price: <span
+                                        class="text-primary">$10.50</span></h6>
+                            </div>
+                            <div class="col-2">
+                                <div class="myBox">
+                                    <button class="btn">
+                                        <i class="fa fa-plus-square " id="plus-square" aria-hidden="true"
+                                            style="color: chocolate; "></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-1"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="row order-row">
+                    <div class="col-md-6 col-12">
+                        <div class="row mt-4 mb-2" data-aos="fade-up">
+                            <div class="col-1"></div>
+                            <div class="col-2"><img class="img-end rounded" src="coffee_1.avif" height="60"
+                                    width="60"> </div>
+                            <div class="col-6">
+                                <h5>coffee and bread crumbs</h5>
+                                <h6><i class="fa fa-tags" aria-hidden="true"></i>price: <span
+                                        class="text-primary">$23.50</span></h6>
+                            </div>
+                            <div class="col-2">
+                                <div class="myBox">
+                                    <button class="btn">
+                                        <i class="fa fa-plus-square " id="plus-square" aria-hidden="true"
+                                            style="color: chocolate; "></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-1"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="row mt-4 mb-2" data-aos="fade-up">
+                            <div class="col-1"></div>
+                            <div class="col-2"><img class="img-end rounded" src="chicken_n_fries.jpg" height="60"
+                                    width="60"> </div>
+                            <div class="col-6">
+                                <h5>Chicken and fries</h5>
+                                <h6><i class="fa fa-tags" aria-hidden="true"></i>price: <span
+                                        class="text-primary">$10.50</span></h6>
+                            </div>
+                            <div class="col-2">
+                                <div class="myBox">
+                                    <button class="btn">
+                                        <i class="fa fa-plus-square " id="plus-square" aria-hidden="true"
+                                            style="color: chocolate; "></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-1"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+                <!-- order-row-2  -->
+
+
+                <!-- order-row-2  -->
+
+
+            </div>
+
+        </div>
+
+        <div class="tab-pane fade" id="lunch" role="tabpanel">
+            <p>delicious lunch.</p>
+        </div>
+    </div>
+    </div>
+ <br><hr>
+    <!-- chef  -->
+<span><h2 class="text-center">Professional Master chefs</h2></span>
+<div class="container">
+
+<div class="for-bg">
+  <div class="box">
+    <div class="content">
+        <img src="rc-cf-FMh5o5m5N9E-unsplash.jpg" alt="Card Image">
+      <h2>Head Chef</h2>
+    </div>
+  </div>
+  <div class="box">
+    <span></span>
+    <div class="content">
+        <img src="chef_2.jpg" alt="Card Image">
+      <h2>head Chef</h2>
+    </div>
+  </div>
+  <div class="box">
+    <span></span>
+    <div class="content">
+        <img src="matheen-faiz-v0rcIyGZn6M-unsplash.jpg" alt="Card Image">
+      <h2>Sous Chef</h2>
+    </div>
+  </div>
+  </div>
+</div>
+
+<!-- review  -->
+     <h1 class="text-center " style="text-shadow: 0 0 10px black;">What our Customers say</h1>
+    <section class="section--reviews">
+        <div class="review_item" data-aos="fade-up" data-aos-delay="100">
+            <div class="author">
+                <img src="https://raw.githubusercontent.com/paul-duvall/website_images/master/reviewer2.jpg" alt="Reviewer 1" />
+                <h4>Maureen Burrows</h4>
+                <span>Good Food Guide</span>
+            </div>
+            <div class="review_words">
+                <p>Under the gifted guidance of Ron Burgandy, one of James Cameron's talented team, imaginative modern cooking from a kitchen brigade at the top of its game.</p>
+            </div>
+        </div>
+
+        <div class="review_item" data-aos="fade-up" data-aos-delay="100">
+            <div class="author">
+                <img src="https://raw.githubusercontent.com/paul-duvall/website_images/master/reviewer1.jpg" alt="Reviewer 2" />
+                <h4>Magnus Mahoney</h4>
+                <span>Time Out Magazine</span>
+            </div>
+            <div class="review_words">
+                <p>On my midweek visit, every seat was taken by 6.15pm, the atmosphere was electric, the air filled with charcoal smoke, music and laughter.</p>
+            </div>
+        </div>
+
+        <div class="review_item" data-aos="fade-up" data-aos-delay="100">
+            <div class="author">
+                <img src="https://raw.githubusercontent.com/paul-duvall/website_images/master/reviewer3.jpg" alt="Reviewer 3" />
+                <h4>Rhonda Barajas</h4>
+                <span>The Guardian</span>
+            </div>
+            <div class="review_words">
+                <p> The friendly and welcoming staff act like they genuinely care, first and foremost, about you having a really good time. I’ll drink to that.</p>
+            </div>
+        </div>
+
+        <div class="review_item" data-aos="fade-up" data-aos-delay="100">
+            <div class="author">
+                <img src="https://raw.githubusercontent.com/paul-duvall/website_images/master/reviewer1.jpg" alt="Reviewer 2" />
+                <h4>Magnus Mahoney</h4>
+                <span>Time Out Magazine</span>
+            </div>
+            <div class="review_words">
+                <p>On my midweek visit, every seat was taken by 6.15pm, the atmosphere was electric, the air filled with charcoal smoke, music and laughter.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer  -->
+ <footer class="bg-dark text-light pt-4 pb-2 mt-5 ">
+    <div class="container">
+
+      <div class="row align-items-center">
+        <div class="col-md-4 mb-3 mb-md-0 text-center text-md-start">
+          <h5 class="fw-bold">Yumi's kitchen</h5>
+          <p class="small mb-0">Delicious meals, cozy atmosphere, and friendly service. Your satisfaction is our priority!</p>
+        </div>
+        <div class="col-md-4 mb-3 mb-md-0 text-center">
+          <h6 class="fw-bold">Quick Links</h6>
+          <ul class="list-unstyled">
+            <li><a href="#menu" class="text-light text-decoration-none"><i class="fas fa-utensils"></i> Menu</a></li>
+            <li><a href="#about" class="text-light text-decoration-none"><i class="fas fa-info-circle"></i> About Us</a></li>
+            <li><a href="#contact" class="text-light text-decoration-none"><i class="fas fa-envelope"></i> Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 text-center text-md-end">
+          <h6 class="fw-bold">Follow Us</h6>
+          <a href="#" class="text-light me-2"><i class="fab fa-facebook fa-lg"></i></a>
+          <a href="#" class="text-light me-2"><i class="fab fa-instagram fa-lg"></i></a>
+          <a href="#" class="text-light me-2"><i class="fab fa-twitter fa-lg"></i></a>
+          <a href="#" class="text-light"><i class="fab fa-whatsapp fa-lg"></i></a>
+          <p class="small mt-2 mb-0"><i class="fas fa-phone"></i> +234 800 123 4567</p>
+        </div>
+        
+
+        <div role="contentinfo" class="footer-content">
+          <div class="row">
+            
+            <div class="col-12 col-md-4 text-center text-md-start">
+              <address>
+                <p>Marthwaite, Sedbergh</p>
+                <p>Cumbria</p>
+                <p>+00 44 123 4567</p>
+              </address>
+            </div>
+            <!-- <div class="col-12 col-md-"></div> -->
+            <div class="col-12 col-md-4 text-center text-md-start">
+              <span>
+                <p class="text-center text-md-start">Open Times</p>
+                <p>Mon - Fri: 06:00 AM - 11:00 PM</p>
+                <p>Sat - Sun: 08:00 AM - 11:30 PM</p>
+              </span>
+            </div>
+             <div class="col-12 col-md-4 text-center text-md-end">
+              <address>
+                <p>Marthwaite, Sedbergh</p>
+                <p>Cumbria</p>
+                <p>+00 44 123 4567</p>
+              </address>
+            </div>
+          </div>
+
+
+        </div>
+
+
+      </div>
+      <hr class="bg-light">
+      <div class="row">
+        <div class="col text-center">
+          <p class="small mb-0">&copy;  Yumi's kitchen. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+<!-- AOS Library JS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, // animation duration in ms
+    once: true, // animation happens only once
+  });
+</script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
